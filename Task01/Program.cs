@@ -12,10 +12,9 @@ int b = Convert.ToInt32(Console.ReadLine());
 
 if (a == b * b)
 {
-    Console.Write("Результат: ");
-    Console.WriteLine("Да");
+    Console.WriteLine($"Число {a} является квадратом {b}");
 }
 else
 {
-    Console.WriteLine("Нет");
+    Console.WriteLine($"Число {a} не является квадратом {b}");
 }

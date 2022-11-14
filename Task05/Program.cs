@@ -15,11 +15,11 @@ if (number >= 0)
         count++;
     }
 }
-else
-{
-    while (count >= number)
-{
-        Console.Write(count + " ");
-        count--;
-    }
-}
+else Console.Write("Введено неккоректное значение");
+// {
+//     while (count >= number)
+// {
+//     Console.Write(count + " ");
+//     count--;
+//     }
+// }

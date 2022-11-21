@@ -10,10 +10,17 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-bool Multiplicity (int number1, int number2)
+// bool Multiplicity (int number1, int number2)
+// {
+//     if (number1 % number2 == 0) return true;
+//     return false;
+// }
+// bool result = Multiplicity(num1, num2);
+// Console.WriteLine(result ? "Первое число кратно второму" : $"Первое число некратно второму, остаток = {num1 % num2}");
+
+int MultiplicitySecond (int number1, int number2)
 {
-    if (number1 % number2 == 0) return true;
-    return false;
+    return number1 % number2;
 }
-bool result = Multiplicity(num1, num2);
-Console.WriteLine(result ? "Первое число кратно второму" : $"Первое число некратно второму, остаток = {num1 % num2}");
+int result2 = MultiplicitySecond(num1, num2);
+Console.WriteLine(result2 == 0? "Первое число кратно второму" : $"Первое число некратно второму, остаток = {result2}");
